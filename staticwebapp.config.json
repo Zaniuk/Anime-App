@@ -5,7 +5,7 @@
             "route" :"/"
         },
         {
-            "route" : "/anime*",
+            "route" : "/anime/*",
             "rewrite": "/anime.html"
         }
     ]
