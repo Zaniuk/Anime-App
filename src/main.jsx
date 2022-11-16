@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './assets/pico.min.css'
 import AnimeSection from './components/Anime/AnimeSection'
+import AnimeByFilter from './components/AnimeByFilter/AnimeByFilter'
 import './index.css'
 import Home from './routes/Home'
 import NotFound from './routes/NotFound'
@@ -15,6 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/' element={<Home />} />
       <Route path='/search' element={<Search />} />
       <Route path='/anime/:id' element={<AnimeSection/>} />
+      <Route path='/genre/:genre' element={<AnimeByFilter/>} />
+      <Route path='/search/:query' element={<AnimeByFilter/>} />
     </Routes>
   </BrowserRouter>
 )

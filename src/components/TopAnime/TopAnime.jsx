@@ -6,11 +6,11 @@ export default function TopAnime() {
     useEffect(() => {
         const options = { method: 'GET' };
 
-        fetch('https://kitsu.io/api/edge/trending/anime', options)
+        fetch('https://kitsu.io/api/edge/trending/anime?page[limit]=12')
             .then(response => response.json())
             .then(res => {
+                res.data.pop()
                 setAnimeList(res.data)
-                console.log(res)
             })
 
     }, [])
@@ -20,7 +20,7 @@ export default function TopAnime() {
                 animeList.map((anime) => {
                     const {canonicalTitle, startDate, popularityRank, status, posterImage} = anime.attributes
                     const {id} = anime
-                    return <AnimeCard  
+                    return <AnimeCard  key={id}
                         canonicalTitle={canonicalTitle} 
                         posterImage={posterImage.large || posterImage.original} 
                         status={status} 

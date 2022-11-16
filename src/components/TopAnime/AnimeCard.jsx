@@ -3,7 +3,7 @@ import React from 'react'
 export default function AnimeCard({canonicalTitle, id, averageRating, startDate, popularityRank, status, posterImage}) {
   return (
     <div className='anime-card'>
-      <a href={`anime/${id}`} className='anime-link'>
+      <a href={`/anime/${id}`} className='anime-link'>
 
       <div>
         <img src={posterImage} alt={`${canonicalTitle} cover`} />
