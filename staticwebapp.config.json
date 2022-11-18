@@ -1,0 +1,12 @@
+{
+    "trailingSlash": "auto",
+    "routes": [
+        {
+            "route" :"/"
+        },
+        {
+            "route" : "/anime/*",
+            "rewrite": "/anime.html"
+        }
+    ]
+}
