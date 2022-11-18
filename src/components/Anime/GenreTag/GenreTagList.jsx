@@ -12,7 +12,7 @@ export default function GenreTagList({id}) {
     <div>
         {
             genreList.map((genre) => {
-                return <GenreTag genre={genre.attributes.title}/>
+                return <GenreTag key={genre.attributes.title} slug={genre.attributes.slug} genre={genre.attributes.title}/>
             })
         }
         {/* <GenreTag genre={'anime'}/> */}

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function GenreTag({genre, id}) {
+export default function GenreTag({genre, id, slug}) {
   return (
-    <div className='tag-badge'>{genre}</div>
+    <a className="tag-link" href={`/genre/${slug}`}><div className='tag-badge'>{genre}</div></a>
   )
 }

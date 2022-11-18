@@ -14,6 +14,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/' element={<Home />} />
       <Route path='/search' element={<Search />} />
       <Route path='/anime/:id' element={<AnimeSection/>} />
+      <Route path='/genre/:genre' element={<AnimeByFilter/>} />
+      <Route path='/search/:query' element={<AnimeByFilter/>} />
     </Routes>
   </BrowserRouter>
 )

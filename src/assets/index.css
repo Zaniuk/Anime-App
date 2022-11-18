@@ -1,6 +1,6 @@
 .anime-list{
     display: grid;
-    grid-template-columns: 1fr 1fr minmax(380px, 1fr);
+    grid-template-columns: 1fr 1fr minmax(160px, 1fr);
     grid-template-rows: auto auto;
 }
 
@@ -31,4 +31,22 @@
     margin-bottom: .6rem;
     border-radius: .5rem;
     font-size: .8rem;
+}
+.tag-link{
+    width: fit-content;
+    height: fit-content;
+}
+.recommendation{
+    margin-bottom: .5rem;
+}
+.recommendation-title{
+    font-size: .9rem;
+}
+
+.hide-button{
+    display: none;
+}
+
+.search-section{
+    height: 100vh;
 }
