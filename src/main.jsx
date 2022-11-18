@@ -6,6 +6,7 @@ import './assets/index.css'
 import Home from './routes/Home'
 import NotFound from './routes/NotFound'
 import Search from './routes/Search'
+import AnimeByFilter from './components/AnimeByFilter/AnimeByFilter'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
